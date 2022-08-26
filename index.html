@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sorting Visualization</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <script
+      src="https://kit.fontawesome.com/178cb92443.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="">
+        <img
+          id="header-img"
+          src="img/Sorting.png"
+          alt="Sorting AlgorithmVisualization"
+        />
+      </a>
+      <div class="vars">
+        <div class="range">
+          <div class="slide">
+            <label for="bars">ِArray Size</label> :
+            <input
+              id="bars"
+              type="range"
+              name="bars"
+              min="1"
+              max="100"
+              value="50"
+              oninput="setup()"
+              onchange="setup()"
+            />
+            <span id="b"> </span>
+          </div>
+          <div class="slide">
+            <label for="delay">Speed</label> :
+            <input
+              id="delay"
+              type="range"
+              name="delay"
+              min="0"
+              max="1000"
+              value="25"
+              oninput="setup()"
+              onchange="setup()"
+            />
+            <span id="d"></span>
+          </div>
+        </div>
+        <div class="sorts">
+          <input
+            id="Selection"
+            type="button"
+            onclick="SelectionSort()"
+            value="Selection Sort"
+          />
+          <input
+            id="Bubble"
+            type="button"
+            onclick="BubbleSort()"
+            value="Bubble Sort"
+          />
+          <input
+            id="Insertion"
+            type="button"
+            onclick="InsertionSort()"
+            value="Insertion Sort"
+          />
+          <input
+            id="Merge"
+            type="button"
+            onclick="MergeSort()"
+            value="Merge Sort"
+          />
+          <input
+            id="Quick"
+            type="button"
+            onclick="QuickSort()"
+            value="Quick Sort"
+          />
+          <input
+            id="Heap"
+            type="button"
+            onclick="HeapSort()"
+            value="Heap Sort"
+          /><br /><br />
+        </div>
+        <button id="newArray" onclick="reset()">Generate New Array</button>
+      </div>
+    </div>
+    <div id="container"></div>
+    <input type="button" id="btnsound" value="🔊" />
+    <!-- footer part code -->
+    <footer id="footer">
+      <section id="about">
+        <div>
+          <img
+            id="footer-img"
+            src="img/Sorting-removebg-preview.png"
+            alt="Sorting Algorithm Visualization"
+          />
+          <p id="para">
+            Sorting Algorithm Visualizer is a website which helps in visualizing
+            all the important Sorting Algorithms like Selection Sort, Bubble
+            Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort.
+          </p>
+        </div>
+      </section>
+      <section id="Subscribe">
+        <input id="emailInput" type="email" placeholder="XYZ@gmail.com" />
+        <input id="Subs" type="button" value="Subscribe" />
+      </section>
+      <section id="" followUs>
+        <h2>Follow Us</h2>
+        <span><i class="fab fa-instagram"></i></span>
+        <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+        <span><i class="fa-brands fa-twitter"></i></span>
+
+        <div id="breakLine"></div>
+      </section>
+      <section id="copywrite">
+        <p>
+          © Copyright by Mayank Sharma.Use for learning and teaching purposes
+          only.<br />Don't claim as your own.
+        </p>
+      </section>
+    </footer>
+    <script src="App/beep.js"></script>
+    <script src="App/script.js"></script>
+  </body>
+</html>
