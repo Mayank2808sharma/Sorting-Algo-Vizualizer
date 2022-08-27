@@ -1,15 +1,15 @@
 <p align="center">
   
-![Sorting Visualizer](https://user-images.githubusercontent.com/40190772/83947174-c3254280-a815-11ea-960c-65d1e2576bce.png)
+![Sorting Visualizer](img/Sorting.png)
 
 </p>
-<h3 align="center">Sorting.Visualizer</h3>
+<h3 align="center">Sorting Algorithm Visualizer</h3>
 
-## 📊 Sorting.Visulizer 🕹[Try It Now](https://mayank2808sharma.github.io/Sorting-Algo-Vizualizer/)
+## 📊 Sorting Algorithm Visulizer 🕹[Try It Now](https://mayank2808sharma.github.io/Sorting-Algo-Vizualizer/)
 
 ---
 
-**_Sorting.Visualizer is a web app for visualizing a bunch of different sorting algorithms Like_**
+**Sorting Visualizer is a web app for visualizing a bunch of different sorting algorithms Like**
 
 1. Selection Sort.
 2. Bubble Sort.
@@ -24,9 +24,9 @@ _With the functionality of_ ⏳(**_Processing Speed Control_**) _and_ 📏(**_Ar
 
 ---
 
-**\_Here in our model, each element value is represented by `THE SIZE OF THE BAR` and the algorithms sort them by placing the smallest elements on the left and the biggest elements on the right**
+**In this model, each element value is represented by `THE SIZE OF THE BAR` and the algorithms sort them by placing the smallest elements on the left and the biggest elements on the right**
 
-**\_The algorithms moves the items around by swapping elements, Without using any addational memory with creating another array.**
+**\_The algorithms moves the items around by swapping elements, Without using any additional memory without creating another array.**
 
 <!-- ## 📷 ScreenShots
 
