@@ -28,6 +28,10 @@ _With the functionality of_ ⏳(**_Processing Speed Control_**) _and_ 📏(**_Ar
 
 **\_The algorithms moves the items around by swapping elements, Without using any additional memory without creating another array.**
 
+---
+
+---
+
 <!-- ## 📷 ScreenShots
 
 ---

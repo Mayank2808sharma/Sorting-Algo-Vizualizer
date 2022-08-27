@@ -213,7 +213,7 @@ h2 {
   left: 4vw;
   top: 145vh;
 }
-.fa-instagram {
+.fa-github {
   color: white;
   position: absolute;
   left: 80.5vw;
@@ -234,8 +234,8 @@ h2 {
   top: 120vh;
   font-size: 2vw;
 }
-.fa-instagram:hover {
-  color: #c13584;
+.fa-github:hover {
+  color: #a972cb;
 }
 .fa-twitter:hover {
   color: #1da1f2;
