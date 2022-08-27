@@ -73,6 +73,7 @@ a#header-img {
   margin: 0.1vw;
   background-color: #5f64ac;
   margin-top: -4.2vh;
+  border-radius: 5px;
 }
 .sorts {
   display: flex;

@@ -5,7 +5,7 @@
 </p>
 <h3 align="center">Sorting.Visualizer</h3>
 
-## 📊 Sorting.Visulizer 🕹[Try It Now]()
+## 📊 Sorting.Visulizer 🕹[Try It Now](https://mayank2808sharma.github.io/Sorting-Algo-Vizualizer/)
 
 ---
 
@@ -28,7 +28,7 @@ _With the functionality of_ ⏳(**_Processing Speed Control_**) _and_ 📏(**_Ar
 
 **\_The algorithms moves the items around by swapping elements, Without using any addational memory with creating another array.**
 
-## 📷 ScreenShots
+<!-- ## 📷 ScreenShots
 
 ---
 
@@ -40,4 +40,4 @@ _With the functionality of_ ⏳(**_Processing Speed Control_**) _and_ 📏(**_Ar
 
 ---
 
-![Visualizer Demo](https://user-images.githubusercontent.com/40190772/70376256-a4e69480-190f-11ea-9a70-2c15d6c1a81a.gif)
+![Visualizer Demo](https://user-images.githubusercontent.com/40190772/70376256-a4e69480-190f-11ea-9a70-2c15d6c1a81a.gif) -->

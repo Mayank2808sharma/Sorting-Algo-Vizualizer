@@ -12,7 +12,7 @@ subsButton.addEventListener("click", function () {
 });
 const def = "#fd0081",
   chng = "#431f91",
-  finished = "#8ef511",
+  finished = "#32de84",
   selected = "yellow";
 
 window.onload = setup();
