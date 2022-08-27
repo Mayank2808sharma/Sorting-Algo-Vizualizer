@@ -1,6 +1,6 @@
 <p align="center">
   
-![Sorting Visualizer](img/Sorting.png)
+![Sorting Visualizer](https://user-images.githubusercontent.com/40190772/83947174-c3254280-a815-11ea-960c-65d1e2576bce.png)
 
 </p>
 <h3 align="center">Sorting Algorithm Visualizer</h3>
