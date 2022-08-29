@@ -59,11 +59,19 @@ function generateBars(n = -1) {
     if (inputDone) {
       inputDone = false;
       let container = document.getElementById("container");
-      const a = prompt("Enter array Size");
-      const arraySize = parseInt(a);
+      const arraySize = Number(prompt("Enter array Size"));
+      if (!arraySize) {
+        alert("Enter a valid Number");
+        reset();
+        return;
+      }
       for (let i = 0; i < arraySize; i++) {
-        const b = prompt("Enter the number");
-        const UserInput = parseInt(b);
+        const UserInput = Number(prompt(`Enter the ${i + 1} element`));
+        if (!UserInput) {
+          alert("Enter a valid Number");
+          reset();
+          return;
+        }
         bars.push(
           '<div class="bar" id="' +
             i +
