@@ -2,9 +2,10 @@ let bars = [];
 let sound = document.getElementById("btnsound");
 let soundCheck = true;
 let user = false;
-let inputDone = true;
+let inputDone = false;
 function userClick() {
   user = true;
+  inputDone = true;
   generateBars();
 }
 sound.addEventListener("click", function () {
@@ -58,14 +59,16 @@ function generateBars(n = -1) {
     if (inputDone) {
       inputDone = false;
       let container = document.getElementById("container");
-      const arraySize = prompt("Enter array Size");
+      const a = prompt("Enter array Size");
+      const arraySize = parseInt(a);
       for (let i = 0; i < arraySize; i++) {
-        const UserInput = prompt("Enter the number");
+        const b = prompt("Enter the number");
+        const UserInput = parseInt(b);
         bars.push(
           '<div class="bar" id="' +
             i +
             '" style="height:' +
-            Math.floor(2 + UserInput * 2) +
+            Math.floor(2 + UserInput) +
             '%"></div>'
         );
       }
