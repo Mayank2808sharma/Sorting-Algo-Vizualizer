@@ -140,6 +140,12 @@ button {
   color: #19bc8b;
   transition: background-color 0.3s ease-out;
 }
+#UserArray {
+  border-color: #1978bc;
+  color: #1978bc;
+  transition: background-color 0.3s ease-out;
+}
+
 #Selection:hover {
   background-color: rgb(169, 114, 203);
   color: white;
@@ -174,6 +180,16 @@ button {
   background-color: rgb(25, 188, 139);
   color: white;
   box-shadow: 2px 2px 2px 2px rgba(5, 66, 48, 0.7);
+}
+#newArray:hover {
+  background-color: rgb(25, 188, 139);
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(5, 66, 48, 0.7);
+}
+#UserArray:hover {
+  background-color: #1978bc;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(12, 4, 56, 0.7);
 }
 #btnsound {
   font-size: 3vw;

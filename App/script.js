@@ -1,6 +1,12 @@
 let bars = [];
 let sound = document.getElementById("btnsound");
 let soundCheck = true;
+let user = false;
+let inputDone = true;
+function userClick() {
+  user = true;
+  generateBars();
+}
 sound.addEventListener("click", function () {
   soundCheck = soundCheck ? false : true;
   sound.value = soundCheck ? "🔊" : "🔇";
@@ -22,13 +28,15 @@ async function setup() {
   document.getElementById("b").innerText = b.value;
   document.getElementById("d").innerText = d.value + "ms";
 
-  if (bars.length != parseInt(b.value)) {
+  if (user == false && bars.length != parseInt(b.value)) {
     generateBars(parseInt(b.value));
   }
 }
 
 function reset() {
   location.reload();
+  user = false;
+  inputDone = false;
 }
 
 function Disable_The_Input() {
@@ -46,16 +54,35 @@ function Finished_Sorting() {
 
 function generateBars(n = -1) {
   bars = [];
-  let container = document.getElementById("container");
-  n = n < 0 ? Math.random() * 20 : n;
-  for (let i = 0; i < n; i++) {
-    bars.push(
-      '<div class="bar" id="' +
-        i +
-        '" style="height:' +
-        Math.floor(2 + Math.random() * 98) +
-        '%"></div>'
-    );
+  if (user) {
+    if (inputDone) {
+      inputDone = false;
+      let container = document.getElementById("container");
+      const arraySize = prompt("Enter array Size");
+      for (let i = 0; i < arraySize; i++) {
+        const UserInput = prompt("Enter the number");
+        bars.push(
+          '<div class="bar" id="' +
+            i +
+            '" style="height:' +
+            Math.floor(2 + UserInput * 2) +
+            '%"></div>'
+        );
+      }
+      container.innerHTML = bars.join("");
+    }
+  } else {
+    let container = document.getElementById("container");
+    n = n < 0 ? Math.random() * 20 : n;
+    for (let i = 0; i < n; i++) {
+      bars.push(
+        '<div class="bar" id="' +
+          i +
+          '" style="height:' +
+          Math.floor(2 + Math.random() * 98) +
+          '%"></div>'
+      );
+    }
   }
   container.innerHTML = bars.join("");
 }
